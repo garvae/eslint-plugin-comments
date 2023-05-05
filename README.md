@@ -133,7 +133,7 @@ Examples of 👎 incorrect code for these options:
 ```js
 /**
  * multiline comment
- * line with wrong offset - Expected all lines to be aligned with the start of the comment
+     * line with wrong offset - Expected all lines to be aligned with the start of the comment
  */
 ```
 
