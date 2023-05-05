@@ -22,5 +22,11 @@ jobs:
       - name: Install deps and build (with cache)
         uses: bahmutov/npm-install@v1
 
+      - name: Lint
+        run: yarn lint
+
+      - name: Find deadcode
+        run: yarn find-deadcode
+
       - name: Test
-        run: npm run test
+        run: yarn test

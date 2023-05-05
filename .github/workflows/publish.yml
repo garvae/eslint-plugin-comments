@@ -6,7 +6,7 @@ on:
     types:
       - completed
 jobs:
-  build:
+  publish:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
@@ -18,6 +18,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           # Defaults to the user or organization that owns the workflow file
           scope: '@garvae'
-      - run: npm publish
+      - run: yarn
+      - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

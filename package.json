@@ -11,6 +11,7 @@
     "lint": "eslint lib/** tests/**",
     "postinstall": "yarn install:husky",
     "prepare": "yarn install:husky",
+    "publish": "npm publish",
     "test": "node tests/lib/rules/no-line-comments/index.js"
   },
   "keywords": [
