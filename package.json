@@ -1,0 +1,43 @@
+{
+  "name": "@garvae/eslint-plugin-comments",
+  "version": "1.0.0",
+  "description": "Various rules for ESLint to work with comments",
+  "author": "Garvae",
+  "main": "./lib/index.js",
+  "exports": "./lib/index.js",
+  "scripts": {
+    "test": "node tests/lib/rules/no-line-comments/index.js"
+  },
+  "keywords": [
+    "comment",
+    "comments",
+    "eslint",
+    "eslint-plugin",
+    "eslintplugin",
+    "multiline",
+    "plugin",
+    "single-line",
+    "starred"
+  ],
+  "license": "SEE LICENSE IN THE 'LICENCE' FILE",
+  "engines": {
+    "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
+  },
+  "files": [
+    "lib/rules"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garvae/eslint-plugin-comments.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/garvae/eslint-plugin-comments/issues"
+  },
+  "homepage": "https://github.com/garvae/eslint-plugin-comments#readme",
+  "peerDependencies": {
+    "eslint": ">=7"
+  }
+}
