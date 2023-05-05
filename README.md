@@ -2,11 +2,9 @@
 
 <br/>
 
-This ESLint plugin will accumulate various rules for working with comments.
+This [ESLint](https://eslint.org/) plugin will accumulate various rules for working with comments.
 
 <br/>
-
-<hr/>
 
 ## 🛠 Installation
 
@@ -55,8 +53,6 @@ yarn add -D @garvae/eslint-plugin-comments
 
 <br/>
 
-<hr/>
-
 ## 📦 Rules
 
 <br/>
@@ -88,6 +84,8 @@ The format of this rule can be applied if both `--fix` option of `ESLint` and `f
 | `ignore.startsWith`           | A comment will be ignored by the rule if it starts with one of the strings defined in the array of strings passed to this rule parameter.                                                                                                                   | `Array<string>` | `undefined` |
 | `ignore.includes`             | A comment will be ignored by the rule if it includes one of the strings defined in the array of strings passed to this rule parameter.                                                                                                                      | `Array<string>` | `undefined` |
 | `singleLineToSingleLineBlock` | If this option is `false` (default), a 'Line' type (not 'Block' type / starred) comment will be formatted into a multi-line 'Block' type (starred) comment, otherwise the comment will be formatted into a valid single-line 'Block' type (starred) comment | `boolean`       | `false`     |
+
+<br/>
 
 Example (all options):
 
@@ -280,8 +278,6 @@ Examples of 👍 correct code for these options:
 
 <br/>
 
-<hr/>
-
 ## 💎 Recommendations
 
 <br/>
@@ -289,8 +285,6 @@ Examples of 👍 correct code for these options:
 - Read about ["multiline-comment-style" rule](https://ru.reactjs.org/docs/design-principles.html) by Teddy Katz. `no-line-comments` by [@Garvae](https://sprd.li/4wr38watys) and `multiline-comment-style` by Teddy Katz can complement each other
 
 <br/>
-
-<hr/>
 
 ## 🤝 Contributions
 
@@ -303,8 +297,6 @@ You can also take a look at the [contuide](https://wwwhub.com/garvae/react-pie-d
 ❤️ **Give a ⭐ if you like this project!**
 
 <br/>
-
-<hr/>
 
 ## 🚀 Mentoring
 
@@ -332,7 +324,5 @@ You can also take a look at the [contuide](https://wwwhub.com/garvae/react-pie-d
 #### ... or [this link 🌐](https://sprd.li/4wr38watys)
 
 <br/>
-
-<hr/>
 
 ## 📄 [License - MIT](https://github.com/garvae/eslint-plugin-comments/blob/master/LICENSE)
