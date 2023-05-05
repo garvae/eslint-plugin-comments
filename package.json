@@ -1,6 +1,6 @@
 {
   "name": "@garvae/eslint-plugin-comments",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Various rules for ESLint to work with comments",
   "author": "Garvae",
   "main": "./lib/index.js",
