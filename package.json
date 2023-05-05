@@ -6,14 +6,14 @@
   "main": "./lib/index.js",
   "exports": "./lib/index.js",
   "scripts": {
-    "find-deadcode": "npx unimported",
+    "find-deadcode": "npx unimported --no-cache",
     "install:husky": "is-ci || husky install",
     "lint": "eslint lib/** tests/**",
     "postinstall": "yarn install:husky",
     "prepare": "yarn install:husky",
     "publish": "npm publish",
     "test": "node tests/lib/rules/no-line-comments/index.js",
-    "version:patch": "npm version patch"
+    "version:patch": "npm version patch && node scripts/plugin-version-update.js"
   },
   "keywords": [
     "comment",

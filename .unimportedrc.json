@@ -1,0 +1,4 @@
+{
+  "entry": ["lib/index.js", "tests/lib/rules/no-line-comments/index.js"],
+  "ignorePatterns": ["**/node_modules/**", "scripts/**"]
+}
