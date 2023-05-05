@@ -46,7 +46,7 @@ yarn add -D @garvae/eslint-plugin-comments
 
 ```json
 {
-  "plugins": [ "@garvae/comments" ],
+  "plugins": ["@garvae/comments"],
   "rules": {
     "@garvae/comments/no-line-comments": "error"
   }
@@ -74,20 +74,20 @@ The format of this rule can be applied if both `--fix` option of `ESLint` and `f
 
 #### 💪 Benefits
 
-✔️ Automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/user-guide/command-line-interface#--fix)  <br/>
+✔️ Automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/user-guide/command-line-interface#--fix) <br/>
 ✔️ Flexible settings <br/>
 
 <br/>
 
 #### ⚙ Options
 
-| option                         | <div style="width:250px">description</div>                                                                                                                                                                                                                  | type            | default     |
-|:-------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|-------------|
-| `fixable`                      | Enables auto-fix by the [`--fix` ESLint CLI option](https://eslint.org/docs/user-guide/command-line-interface#--fix). Disabled by default because you may want to check all comments first                                                                  | `boolean`       | `false`     |
-| `ignore`                       | Defines the conditions under which a comment will be ignored by the rule                                                                                                                                                                                    | `Object`        | `undefined` |
-| `ignore.startsWith`            | A comment will be ignored by the rule if it starts with one of the strings defined in the array of strings passed to this rule parameter.                                                                                                                   | `Array<string>` | `undefined` |
-| `ignore.includes`              | A comment will be ignored by the rule if it includes one of the strings defined in the array of strings passed to this rule parameter.                                                                                                                      | `Array<string>` | `undefined` |
-| `singleLineToSingleLineBlock`  | If this option is `false` (default), a 'Line' type (not 'Block' type / starred) comment will be formatted into a multi-line 'Block' type (starred) comment, otherwise the comment will be formatted into a valid single-line 'Block' type (starred) comment | `boolean`       | `false`     |
+| option                        | <div style="min-width:300px">description</div>                                                                                                                                                                                                              | type            | default     |
+| :---------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ----------- |
+| `fixable`                     | Enables auto-fix by the [`--fix` ESLint CLI option](https://eslint.org/docs/user-guide/command-line-interface#--fix). Disabled by default because you may want to check all comments first                                                                  | `boolean`       | `false`     |
+| `ignore`                      | Defines the conditions under which a comment will be ignored by the rule                                                                                                                                                                                    | `Object`        | `undefined` |
+| `ignore.startsWith`           | A comment will be ignored by the rule if it starts with one of the strings defined in the array of strings passed to this rule parameter.                                                                                                                   | `Array<string>` | `undefined` |
+| `ignore.includes`             | A comment will be ignored by the rule if it includes one of the strings defined in the array of strings passed to this rule parameter.                                                                                                                      | `Array<string>` | `undefined` |
+| `singleLineToSingleLineBlock` | If this option is `false` (default), a 'Line' type (not 'Block' type / starred) comment will be formatted into a multi-line 'Block' type (starred) comment, otherwise the comment will be formatted into a valid single-line 'Block' type (starred) comment | `boolean`       | `false`     |
 
 Example (all options):
 
@@ -98,8 +98,8 @@ Example (all options):
     {
       "fixable": true,
       "ignore": {
-        "startsWith": [ "keyword", "key-phrase" ],
-        "includes": [ "keyword", "key-phrase" ]
+        "startsWith": ["keyword", "key-phrase"],
+        "includes": ["keyword", "key-phrase"]
       },
       "singleLineToSingleLineBlock": true
     }
@@ -135,7 +135,7 @@ Examples of 👎 incorrect code for these options:
 ```js
 /**
  * multiline comment
-  * line with wrong offset - Expected all lines to be aligned with the start of the comment
+ * line with wrong offset - Expected all lines to be aligned with the start of the comment
  */
 ```
 
@@ -225,7 +225,7 @@ Examples of 👍 correct code for these options:
   "@garvae/comments/no-line-comments": [
     "error",
     {
-      "ignore": { "startsWith": [ "keyword", "key-phrase" ] }
+      "ignore": { "startsWith": ["keyword", "key-phrase"] }
     }
   ]
 }
@@ -256,7 +256,7 @@ Examples of 👍 correct code for these options:
   "@garvae/comments/no-line-comments": [
     "error",
     {
-      "ignore": { "includes": [ "keyword", "key-phrase" ] }
+      "ignore": { "includes": ["keyword", "key-phrase"] }
     }
   ]
 }
@@ -300,7 +300,7 @@ Examples of 👍 correct code for these options:
 Feel free to check [issues page](https://www.github.com/garvae/react-pie-donut-chart/issues).
 You can also take a look at the [contuide](https://wwwhub.com/garvae/react-pie-donut-chart/raw/master/CONTRIBUTING.md).
 
-❤️ **Give a  ⭐ if you like this project!**
+❤️ **Give a ⭐ if you like this project!**
 
 <br/>
 
