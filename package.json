@@ -6,6 +6,11 @@
   "main": "./lib/index.js",
   "exports": "./lib/index.js",
   "scripts": {
+    "find-deadcode": "npx unimported",
+    "install:husky": "is-ci || husky install",
+    "lint": "eslint lib/** tests/**",
+    "postinstall": "yarn install:husky",
+    "prepare": "yarn install:husky",
     "test": "node tests/lib/rules/no-line-comments/index.js"
   },
   "keywords": [
@@ -30,6 +35,16 @@
     "type": "git",
     "url": "git+https://github.com/garvae/eslint-plugin-comments.git"
   },
+  "devDependencies": {
+    "eslint": "8.22.0",
+    "eslint-plugin-eslint-plugin": "^5.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "husky": "^7.0.1",
+    "is-ci": "^3.0.0",
+    "lint-staged": "^12.3.7",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.2.1"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -39,5 +54,13 @@
   "homepage": "https://github.com/garvae/eslint-plugin-comments#readme",
   "peerDependencies": {
     "eslint": ">=7"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
   }
 }
