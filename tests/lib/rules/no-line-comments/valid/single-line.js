@@ -5,6 +5,8 @@
  * @type {Array<{code: string, options: [{ignore: {startsWith?: string[], includes?: string[]}}]}>}
  */
 module.exports = [
+  { code: '/// <reference path="..." />' },
+  { code: '/// <amd-module />' },
   { code: '/* single-line comment */' },
   {
     code: '// single-line comment',
