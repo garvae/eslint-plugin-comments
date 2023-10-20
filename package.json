@@ -7,7 +7,7 @@
   "exports": "./lib/index.js",
   "scripts": {
     "find-deadcode": "npx unimported --no-cache",
-    "install:husky": "is-ci || husky install",
+    "install:husky": "[ ! -d \"/node_modules/is-ci/\" ] || is-ci || [ ! -d \"/node_modules/husky/\" ] || husky install",
     "lint": "eslint lib/** tests/**",
     "postinstall": "yarn install:husky",
     "prepare": "yarn install:husky",

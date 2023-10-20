@@ -1,16 +1,24 @@
-# eslint-plugin-comments by [@Garvae](https://sprd.li/4wr38watys)
+# eslint-plugin-comments by [@Garvae][garvae]
 
 <br/>
 
-This [ESLint](https://eslint.org/) plugin will accumulate various rules for working with comments.
+Various rules for [ESLint][eslint] to work with comments
 
 <br/>
+
+---
+
+<p align="center">
+    <img src="https://github.com/garvae/eslint-plugin-comments/blob/master/assets/images/gh-cover.svg?raw=true" alt="eslint-plugin-comments cover" width="100%" height="auto">
+</p>
+
+---
 
 ## 🛠 Installation
 
 <br/>
 
-### 1. Install [ESLint](https://eslint.org/) if you haven't already
+### 1. Install [ESLint][eslint] if you haven't already
 
 <br/>
 
@@ -133,7 +141,7 @@ Examples of 👎 incorrect code for these options:
 ```js
 /**
  * multiline comment
-     * line with wrong offset - Expected all lines to be aligned with the start of the comment
+ * line with wrong offset - Expected all lines to be aligned with the start of the comment
  */
 ```
 
@@ -282,47 +290,70 @@ Examples of 👍 correct code for these options:
 
 <br/>
 
-- Read about ["multiline-comment-style" rule](https://ru.reactjs.org/docs/design-principles.html) by Teddy Katz. `no-line-comments` by [@Garvae](https://sprd.li/4wr38watys) and `multiline-comment-style` by Teddy Katz can complement each other
+Read about ["multiline-comment-style" rule](https://ru.reactjs.org/docs/design-principles.html) by [Teddy Katz].
+
+`no-line-comments` by [@Garvae](https://sprd.li/4wr38watys) and `multiline-comment-style` by [Teddy Katz] can complement each other
 
 <br/>
 
 ## 🤝 Contributions
 
+🤝 Contributions, issues and feature requests are welcome! <br/>
+Feel free to check [issues page][issue] and [pull request page][pr].
+
+❤️ **Give a** ⭐ **if you like this project!**
+
 <br/>
 
-🤝 Contributions, issues and feature requests are welcome! <br/>
-Feel free to check [issues page](https://www.github.com/garvae/react-pie-donut-chart/issues).
-You can also take a look at the [contuide](https://wwwhub.com/garvae/react-pie-donut-chart/raw/master/CONTRIBUTING.md).
+## 📞 Contact me
 
-❤️ **Give a ⭐ if you like this project!**
+### 🌐 [Contact page][garvae]
+
+### 🔳 QR code
+
+<div style="background-color: white; display: inline-block; margin-top: 2em; margin-bottom: 2em">
+    <img src="https://github.com/garvae/assets/blob/master/assets/img/garvae-contacts.png?raw=true" alt="contact me" width="300px" height="300px">
+</div>
+
+### 🔗 Links
+
+- [**E-mail**][email]
+- [**Telegram**][telegram]
+- [**Facebook**][facebook]
+- [**Instagram**][instagram]
+- [**LinkedIn**][linkedin]
+- [**GitHub**][github]
 
 <br/>
 
 ## 🚀 Mentoring
 
-### If you want to grow 🚀 fast in front-end development - [contact me! 🙋‍♂](https://sprd.li/4wr38watys)
+**If you want to grow** 🚀 **fast in front-end development - [contact me!][garvae]** 🙋‍♂
 
 <br/>
 
-### 📞 My contacts
+## 📄 License
 
-- [E-mail](vgarvae@gmail.com)
-- [Telegram](https://t.me/garvae)
-- [Facebook](https://www.facebook.com/garvae)
-- [Instagram](https://www.instagram.com/garvae)
-- [LinkedIn](https://linkedin.com/in/garvae)
-- [GitHub](https://github.com/garvae)
+[See license in the "**LICENCE**" file][license]
 
-<br/>
-
-#### ... or use QR below 🔳
-
-<div style="background-color: white; display: inline-block; margin-top: 2em; margin-bottom: 2em">
-    <img src="assets/img/png/garvae-contacts.png" alt="contacts" width="300px" height="300px">
-</div>
-
-#### ... or [this link 🌐](https://sprd.li/4wr38watys)
-
-<br/>
-
-## 📄 [License - MIT](https://github.com/garvae/eslint-plugin-comments/blob/master/LICENSE)
+[//]: # "------------------------------------------------------------------"
+[//]: # "------------------------- Document links -------------------------"
+[//]: # "------------------------------------------------------------------"
+[//]: # "--------------------------- repo links ---------------------------"
+[eslint]: https://eslint.org
+[Teddy Katz]: https://github.com/not-an-aardvark
+[//]: # "-------------------------- common links --------------------------"
+[issue]: https://github.com/garvae/eslint-plugin-comments/issues
+[pr]: https://github.com/garvae/eslint-plugin-comments/pulls
+[repo]: https://github.com/garvae/eslint-plugin-comments
+[license]: https://github.com/garvae/eslint-plugin-comments/blob/master/LICENSE?raw=true
+[//]: # "---------------------------- contacts ----------------------------"
+[garvae]: https://sprd.li/4wr38watys
+[email]: vgarvae@gmail.com
+[telegram]: https://t.me/garvae
+[facebook]: https://www.facebook.com/garvae
+[instagram]: https://www.instagram.com/garvae
+[linkedin]: https://linkedin.com/in/garvae
+[github]: https://github.com/garvae
+[//]: # "------------------------------------------------------------------"
+[//]: # "------------------------------------------------------------------"

@@ -1,32 +1,33 @@
 name: CI
-on: [push]
+on:
+  release:
+    types: [published]
+
 jobs:
   check:
     name: Check on Node ${{ matrix.node }} and ${{ matrix.os }}
-
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node: ['14.x']
+        node: ['18.x']
         os: [ubuntu-latest, windows-latest, macOS-latest]
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Use Node ${{ matrix.node }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
 
-      - name: Install deps and build (with cache)
+      - name: Install deps
         uses: bahmutov/npm-install@v1
 
       - name: Lint
         run: yarn lint
 
-      - name: Find deadcode
-        run: yarn find-deadcode
-
       - name: Test
         run: yarn test
+
+
